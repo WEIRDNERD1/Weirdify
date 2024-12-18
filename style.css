@@ -22,7 +22,8 @@ header {
     margin-bottom: -250px; /* Reduced space below header */
 }
 header .logo img {
-    width: 500px;
+    width: 100%; /* Responsive width */
+    max-width: 500px; /* Limit the maximum size */
     height: auto;
     animation: float 3s ease-in-out infinite;
 }
@@ -73,7 +74,8 @@ header p {
     background: #222;
     border-radius: 8px;
     padding: 20px;
-    width: 250px;
+    width: 100%; /* Responsive width */
+    max-width: 250px; /* Limit the maximum size */
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -148,5 +150,38 @@ footer {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+    .service-box {
+        max-width: 90%; /* Full-width for smaller screens */
+    }
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+    .cta-btn {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+    .service-box {
+        padding: 15px;
     }
 }
