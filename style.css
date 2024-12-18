@@ -27,7 +27,7 @@ header {
 }
 header .logo img {
     width: 100%; /* Responsive width */
-    max-width: 500px; /* Limit the maximum size */
+    max-width: 300px; /* Limit the maximum size */
     height: auto;
     animation: float 3s ease-in-out infinite;
 }
