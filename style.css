@@ -20,6 +20,10 @@ header {
     text-align: center;
     padding: 20px 10px; /* Reduced padding */
     margin-bottom: -250px; /* Reduced space below header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 header .logo img {
     width: 100%; /* Responsive width */
@@ -155,6 +159,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        margin-bottom: 0; /* Adjust spacing for smaller screens */
+    }
     header h1 {
         font-size: 2rem;
     }
@@ -171,6 +178,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+    header {
+        margin-bottom: 0;
+    }
+    header .logo img {
+        max-width: 300px; /* Ensure smaller logo size for phones */
+    }
     header h1 {
         font-size: 1.8rem;
     }
