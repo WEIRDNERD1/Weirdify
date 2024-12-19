@@ -19,7 +19,7 @@ a {
 header {
     text-align: center;
     padding: 20px 10px; /* Reduced padding */
-    margin-bottom: -250px; /* Reduced space below header */
+    margin-bottom: 250px; /* Reduced space below header */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +27,9 @@ header {
 }
 header .logo img {
     width: 100%; /* Responsive width */
-    max-width: 300px; /* Limit the maximum size */
+    max-width: 500px; /* Limit the maximum size */
     height: auto;
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 header h1 {
     font-size: 2.5rem;
